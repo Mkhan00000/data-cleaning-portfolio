@@ -19,6 +19,15 @@ Using Python (pandas), I:
 - Handled missing data logically
 - Exported a clean, analysis-ready CSV
 
+## Before vs After
+- Input: messy CSV with missing and invalid values
+- Output: clean, numeric, analysis-ready dataset
+
+Files included:
+- dirty_data.csv (raw input)
+- cleaned_data.csv (final output)
+- cleaning.ipynb (Python pandas logic)
+
 ## Tools Used
 - Python
 - pandas
