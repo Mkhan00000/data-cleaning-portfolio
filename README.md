@@ -23,10 +23,7 @@ Using Python (pandas), I:
 - Input: messy CSV with missing and invalid values
 - Output: clean, numeric, analysis-ready dataset
 
-Files included:
-- dirty_data.csv (raw input)
-- cleaned_data.csv (final output)
-- cleaning.ipynb (Python pandas logic)
+
 
 ## Tools Used
 - Python
@@ -34,3 +31,10 @@ Files included:
 
 ## Use Case
 This type of cleaning is commonly required before data analysis, reporting, or machine learning tasks.
+
+Files included:
+- dirty_data.csv (raw input)
+- cleaned_data.csv (final output)
+- cleaning.ipynb (Python pandas logic)
+- - cleaning.py (standalone Python script version)
+
