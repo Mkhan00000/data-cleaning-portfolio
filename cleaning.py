@@ -1,0 +1,20 @@
+import pandas as pd
+
+# Load dirty data
+df = pd.read_csv("dirty_data.csv")
+
+# Clean column names
+df.columns = df.columns.str.strip().str.lower()
+
+# Clean price column
+df['price'] = df['price'].replace(r'[$,]', '', regex=True)
+df['price'] = pd.to_numeric(df['price'], errors='coerce')
+
+# Fill missing prices with median
+median_price = df['price'].median()
+df['price'] = df['price'].fillna(median_price)
+
+# Save cleaned data
+df.to_csv("cleaned_data.csv", index=False)
+
+print("Data cleaning completed successfully")
